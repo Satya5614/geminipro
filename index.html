@@ -126,6 +126,27 @@
                 </div>
             </div>
         </aside>
+        <div id="success-modal" class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="status-indicator">
+                        <span class="blink"></span> TRANSMISSION COMPLETE
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <h2>OFFER RECEIVED</h2>
+                    <p>Your acquisition bid has been securely logged in the decentralized ledger.</p>
+                    <div class="transaction-id">
+                        <span>TXID:</span> <span id="tx-id">GENERATING...</span>
+                    </div>
+                    <p class="subtext">Our agents will establish a secure line of communication shortly.</p>
+                </div>
+                <button id="close-modal" class="cyber-btn">
+                    <span class="btn-content">ACKNOWLEDGE</span>
+                    <span class="glitch-effect"></span>
+                </button>
+            </div>
+        </div>
     </main>
 
     <script src="script.js"></script>
