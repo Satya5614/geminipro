@@ -147,6 +147,29 @@ body {
     transition: all 0.3s ease;
 }
 
+.card-visual {
+    flex-grow: 1;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.5s ease;
+}
+
+.card-3d:hover .card-visual img {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
 .card-3d:hover .card-face {
     border-color: var(--accent-color);
     box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
