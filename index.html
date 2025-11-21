@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acquire GeminiPro | Exclusive Digital Assets</title>
+    <meta name="description"
+        content="Secure the future. GeminiPro.in and GeminiPro3.com are available for immediate acquisition.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="ambient-light"></div>
+
+    <main class="viewport-container">
+        <!-- Left Side: 3D Showcase -->
+        <section class="showcase-area">
+            <div class="header-minimal">
+                <div class="status-indicator">
+                    <span class="blink"></span> Live Auction Status
+                </div>
+                <h1>GEMINI<br>PRO</h1>
+            </div>
+
+            <div class="scene-3d">
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card-3d" data-domain="GeminiPro.in">
+                        <div class="card-face front">
+                            <div class="chip"></div>
+                            <div class="card-content">
+                                <span class="label">ASSET ID: 01</span>
+                                <h2 class="asset-name">GeminiPro<span class="tld">.in</span></h2>
+                                <div class="card-footer">
+                                    <span class="rarity">TIER 1 ASSET</span>
+                                    <div class="select-indicator">SELECT</div>
+                                </div>
+                            </div>
+                            <div class="shine"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card-3d" data-domain="GeminiPro3.com">
+                        <div class="card-face front">
+                            <div class="chip"></div>
+                            <div class="card-content">
+                                <span class="label">ASSET ID: 02</span>
+                                <h2 class="asset-name">GeminiPro3<span class="tld">.com</span></h2>
+                                <div class="card-footer">
+                                    <span class="rarity">TIER 1 ASSET</span>
+                                    <div class="select-indicator">SELECT</div>
+                                </div>
+                            </div>
+                            <div class="shine"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instruction-text">
+                <p>Select an asset to initiate acquisition protocol.</p>
+            </div>
+        </section>
+
+        <!-- Right Side: Acquisition Terminal -->
+        <aside class="terminal-area">
+            <div class="terminal-content">
+                <div class="terminal-header">
+                    <h3>ACQUISITION TERMINAL</h3>
+                    <div class="terminal-controls">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+
+                <div class="terminal-body">
+                    <div id="selection-display" class="selection-display empty">
+                        <span class="placeholder">WAITING FOR SELECTION...</span>
+                        <div class="selected-list"></div>
+                    </div>
+
+                    <form id="offer-form" action="#" method="POST">
+                        <input type="hidden" name="selected_domains" id="selected-domains-input">
+
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label>IDENTITY</label>
+                                <input type="text" name="name" placeholder="FULL NAME" required>
+                            </div>
+
+                            <div class="input-group">
+                                <label>CONTACT</label>
+                                <input type="email" name="email" placeholder="EMAIL ADDRESS" required>
+                            </div>
+
+                            <div class="input-group full-width">
+                                <label>SECURE LINE</label>
+                                <input type="tel" name="phone" placeholder="PHONE NUMBER" required>
+                            </div>
+
+                            <div class="input-group full-width">
+                                <label>BID AMOUNT (USD)</label>
+                                <div class="currency-wrapper">
+                                    <span class="currency-symbol">$</span>
+                                    <input type="number" name="offer" placeholder="MINIMUM OFFER" min="1" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="cyber-btn">
+                            <span class="btn-content">INITIATE TRANSFER</span>
+                            <span class="glitch-effect"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="terminal-footer">
+                    <p>SECURED BY 256-BIT ENCRYPTION</p>
+                    <p>SESSION ID: <span id="session-id">Loading...</span></p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
